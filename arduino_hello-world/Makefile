@@ -1,20 +1,14 @@
 # name of your application
-APPLICATION = saul_example
+APPLICATION = arduino_hello-world
 
 # If no BOARD is found in the environment, use this default:
 BOARD ?= arduino-uno
-
-PORT_LINUX=/dev/ttyUSB0
+PORT_LINUX = /dev/ttyUSB0
 
 # This has to be the absolute path to the RIOT base directory:
 RIOTBASE ?= $(CURDIR)/../RIOT
 
-# we want to use SAUL:
-USEMODULE += saul_default
-# include the shell:
-USEMODULE += shell_cmds_default
-# additional modules for debugging:
-USEMODULE += ps
+USEMODULE += arduino
 USEMODULE += stdio_uart_onlcr
 
 # Comment this out to disable code in RIOT that does safety checking
