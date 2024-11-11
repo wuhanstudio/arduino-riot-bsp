@@ -1,0 +1,3 @@
+ifneq (,$(filter mpu6050,$(USEMODULE))) # if module in USEMODULE
+    FEATURES_REQUIRED += cpp
+endif

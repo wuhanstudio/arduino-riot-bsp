@@ -1,0 +1,3 @@
+ifneq (,$(filter madgwick,$(USEMODULE))) # if module in USEMODULE
+    FEATURES_REQUIRED += cpp
+endif
